@@ -21,6 +21,10 @@
 
 ---
 
+![demo-img](./demo.png)
+
+---
+
 ### 🚀 Install
 
 ```bash
@@ -71,6 +75,7 @@ zipr bench input.txt
 
 Rust · bitvec · rayon · clap · serde
 
+
 ---
 
 ### 🧪 Roadmap
@@ -78,7 +83,6 @@ Rust · bitvec · rayon · clap · serde
 * [ ] Smart algorithm selection
 * [ ] Streaming mode (stdin/stdout)
 * [ ] GUI (Tauri)
-
 
 ---
 
