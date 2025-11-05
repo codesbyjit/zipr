@@ -1,0 +1,27 @@
+[package]
+name = "zipr"
+version = "0.0.1"
+edition = "2024"
+
+[features]
+default = []
+gpu = ["ocl"]
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }       # CLI
+bitvec = "1"                                          # bit-level buffers
+rayon = "1.7"                                         # parallelism
+memmap2 = "0.6"                                       # mmap for large files
+serde = { version = "1.0", features = ["derive"] }    # metadata
+bincode = "2"                                         # compact metadata
+log = "0.4"
+env_logger = "0.10"
+num_cpus = "1.16"
+lz4_flex = "0.11"
+crc32fast = "1.3"
+once_cell = "1.19"
+crossbeam-channel = "0.5"
+ocl = { version = "0.19", optional = true }
+
+[dev-dependencies]
+criterion = "0.5"                                     # benchmarks
